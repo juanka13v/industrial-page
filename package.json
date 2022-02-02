@@ -1,0 +1,12 @@
+{
+  "name": "industrial-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass -w scss -o css",
+    "server": "live-server --host=localhost --port=3000"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -1,0 +1,31 @@
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  // Inicializa algunas propiedades aquí
+}
+
+
+img {
+  max-width: 100%;
+}
+
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+  background: none;
+  border: 0;
+  color: inherit;
+  /* cursor: default; */
+  font: inherit;
+  line-height: normal;
+  overflow: visible;
+  padding: 0;
+}
