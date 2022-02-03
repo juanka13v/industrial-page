@@ -1,0 +1,88 @@
+.info_container {
+  width: 100%;
+
+  .info_wrapper {
+    border: 2px solid springgreen;
+    max-width: $max-width;
+    color: $text-color-2;
+    padding: 3rem;
+    margin: 0 auto;
+    display: flex;
+    @media screen and (max-width: $breakpoint-md) {
+        flex-direction: column;
+    }
+    @media screen and (max-width: $breakpoint-sm) {
+        padding: 1rem;
+    }
+
+    .info_title {
+      flex: 5;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+
+      h3 {
+        color: $main-color;
+        font-size: 1.5rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        margin-bottom: 1.5rem;
+      }
+
+      h1 {
+        font-size: 2.25rem;
+        font-weight: 900;
+        line-height: 1.1;
+        margin-bottom: 1.5rem;
+      }
+
+      .line-small {
+        width: 80px;
+        border-width: 3px;
+        border-color: $main-color;
+        border-style: solid;
+        border-right-width: 0;
+        border-left-width: 0;
+        border-bottom-width: 0;
+        margin-bottom: 1.5rem;
+      }
+
+      p {
+        font-family: $font-2;
+        color: $second-color;
+        font-style: italic;
+        font-size: 1.5rem;
+      }
+    }
+
+    .info_text {
+      flex: 5;
+      padding: 1rem 3rem;
+      @media screen and (max-width: $breakpoint-md) {
+          padding: 1rem;
+      }
+
+      p {
+        font-family: $font-2;
+        margin-bottom: 2rem;
+      }
+
+      .btn-active {
+          color: #ffffff;
+        font-weight: 700;
+        font-size: 1rem;
+        letter-spacing: 1px;
+        border-radius: 4px;
+        padding: 10px 30px;
+        border: 2px solid $main-color;
+        background-color: $main-color;
+        margin-right: 2rem;
+
+        &:hover {
+          background-color: $hover-color;
+          border-color: $hover-color;
+        }
+      }
+    }
+  }
+}

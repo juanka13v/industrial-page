@@ -126,3 +126,71 @@ button {
         border: 1px solid springgreen;
         max-height: 600px;
         max-width: 350px; }
+
+.info_container {
+  width: 100%; }
+  .info_container .info_wrapper {
+    border: 2px solid springgreen;
+    max-width: 1140px;
+    color: #111111;
+    padding: 3rem;
+    margin: 0 auto;
+    display: flex; }
+    @media screen and (max-width: 769px) {
+      .info_container .info_wrapper {
+        flex-direction: column; } }
+    @media screen and (max-width: 480px) {
+      .info_container .info_wrapper {
+        padding: 1rem; } }
+    .info_container .info_wrapper .info_title {
+      flex: 5;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column; }
+      .info_container .info_wrapper .info_title h3 {
+        color: #f4cb08;
+        font-size: 1.5rem;
+        font-weight: 700;
+        letter-spacing: 1px;
+        margin-bottom: 1.5rem; }
+      .info_container .info_wrapper .info_title h1 {
+        font-size: 2.25rem;
+        font-weight: 900;
+        line-height: 1.1;
+        margin-bottom: 1.5rem; }
+      .info_container .info_wrapper .info_title .line-small {
+        width: 80px;
+        border-width: 3px;
+        border-color: #f4cb08;
+        border-style: solid;
+        border-right-width: 0;
+        border-left-width: 0;
+        border-bottom-width: 0;
+        margin-bottom: 1.5rem; }
+      .info_container .info_wrapper .info_title p {
+        font-family: "Open Sans", sans-serif;
+        color: #b3b3b3;
+        font-style: italic;
+        font-size: 1.5rem; }
+    .info_container .info_wrapper .info_text {
+      flex: 5;
+      padding: 1rem 3rem; }
+      @media screen and (max-width: 769px) {
+        .info_container .info_wrapper .info_text {
+          padding: 1rem; } }
+      .info_container .info_wrapper .info_text p {
+        font-family: "Open Sans", sans-serif;
+        margin-bottom: 2rem; }
+      .info_container .info_wrapper .info_text .btn-active {
+        color: #ffffff;
+        font-weight: 700;
+        font-size: 1rem;
+        letter-spacing: 1px;
+        border-radius: 4px;
+        padding: 10px 30px;
+        border: 2px solid #f4cb08;
+        background-color: #f4cb08;
+        margin-right: 2rem; }
+        .info_container .info_wrapper .info_text .btn-active:hover {
+          background-color: #967e07;
+          border-color: #967e07; }

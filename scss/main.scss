@@ -1,9 +1,12 @@
-// Configuración inicial
-@import 'init';
 
 // Variables
 @import 'variables';
 
+// Configuración inicial
+@import 'init';
+
+
 // Componentes aquí
 @import 'components/header';
 @import 'components/main';
+@import 'components/info';
