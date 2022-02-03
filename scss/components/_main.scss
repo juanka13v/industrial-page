@@ -11,6 +11,15 @@
     max-width: $max-width;
     margin: 0 auto;
     padding: 6rem 3rem 0 3rem;
+    @media screen and (max-width: $breakpoint-md ) {
+      min-height: 600px;
+      padding: 0 3rem;
+    }
+
+    @media screen and (max-width: $breakpoint-sm) {
+      min-height: 500px;
+      padding: 2rem 1rem;
+    }
     display: flex;
     
     .main_content {
@@ -20,7 +29,9 @@
         flex-direction: column;
         justify-content: center;
         padding: 0 4rem 0 0;
-
+        @media screen and (max-width: $breakpoint-md) {
+          padding: 0;
+        }
       h3 {
         color: $main-color;
         font-size: 1.5rem;
@@ -50,22 +61,42 @@
       p {
         word-wrap: break-word;
         margin-bottom: 1.5rem;
+        @media screen and (max-width: $breakpoint-sm) {
+          margin-bottom: 3rem;
+        }
       }
 
       .btns {
           font-family: $font-2;
+          display: flex; 
+          @media screen and (max-width: $breakpoint-md) {
+            justify-content: center;
+          }
+
+          @media screen and (max-width: $breakpoint-sm) {
+            justify-content: flex-start;
+          }
+
         button {
           font-weight: 700;
           font-size: 1rem;
           letter-spacing: 1px;
           border-radius: 4px;
           padding: 10px 30px;
+          @media screen and (max-width: $breakpoint-md) {
+            padding: 10px 20px;
+          }
+
+          @media screen and (max-width: $breakpoint-sm) {
+            padding: 5px 10px;
+          }
           cursor: pointer;
         }
         
         .btn-active {
             border: 2px solid $main-color;
             background-color: $main-color;
+            margin-right: 2rem;
 
             &:hover {
                 background-color: $hover-color;
@@ -88,6 +119,9 @@
 
     .main_img {
       flex: 4;
+      @media screen and (max-width: $breakpoint-md) {
+        display: none;
+      }
 
       .img_content {
           display: flex;

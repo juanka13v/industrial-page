@@ -36,6 +36,14 @@ button {
     margin: 0 auto;
     padding: 6rem 3rem 0 3rem;
     display: flex; }
+    @media screen and (max-width: 769px) {
+      .main_container .main_wrapper {
+        min-height: 600px;
+        padding: 0 3rem; } }
+    @media screen and (max-width: 480px) {
+      .main_container .main_wrapper {
+        min-height: 500px;
+        padding: 2rem 1rem; } }
     .main_container .main_wrapper .main_content {
       flex: 6;
       color: #ffffff;
@@ -43,6 +51,9 @@ button {
       flex-direction: column;
       justify-content: center;
       padding: 0 4rem 0 0; }
+      @media screen and (max-width: 769px) {
+        .main_container .main_wrapper .main_content {
+          padding: 0; } }
       .main_container .main_wrapper .main_content h3 {
         color: #f4cb08;
         font-size: 1.5rem;
@@ -66,8 +77,18 @@ button {
       .main_container .main_wrapper .main_content p {
         word-wrap: break-word;
         margin-bottom: 1.5rem; }
+        @media screen and (max-width: 480px) {
+          .main_container .main_wrapper .main_content p {
+            margin-bottom: 3rem; } }
       .main_container .main_wrapper .main_content .btns {
-        font-family: "Open Sans", sans-serif; }
+        font-family: "Open Sans", sans-serif;
+        display: flex; }
+        @media screen and (max-width: 769px) {
+          .main_container .main_wrapper .main_content .btns {
+            justify-content: center; } }
+        @media screen and (max-width: 480px) {
+          .main_container .main_wrapper .main_content .btns {
+            justify-content: flex-start; } }
         .main_container .main_wrapper .main_content .btns button {
           font-weight: 700;
           font-size: 1rem;
@@ -75,9 +96,16 @@ button {
           border-radius: 4px;
           padding: 10px 30px;
           cursor: pointer; }
+          @media screen and (max-width: 769px) {
+            .main_container .main_wrapper .main_content .btns button {
+              padding: 10px 20px; } }
+          @media screen and (max-width: 480px) {
+            .main_container .main_wrapper .main_content .btns button {
+              padding: 5px 10px; } }
         .main_container .main_wrapper .main_content .btns .btn-active {
           border: 2px solid #f4cb08;
-          background-color: #f4cb08; }
+          background-color: #f4cb08;
+          margin-right: 2rem; }
           .main_container .main_wrapper .main_content .btns .btn-active:hover {
             background-color: #967e07;
             border-color: #967e07; }
@@ -89,6 +117,9 @@ button {
             color: #111111; }
     .main_container .main_wrapper .main_img {
       flex: 4; }
+      @media screen and (max-width: 769px) {
+        .main_container .main_wrapper .main_img {
+          display: none; } }
       .main_container .main_wrapper .main_img .img_content {
         display: flex;
         justify-content: center;
