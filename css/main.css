@@ -239,3 +239,77 @@ button {
         border-left-width: 0;
         border-bottom-width: 0;
         margin: 0 1rem; }
+
+.services_container {
+  width: 100%; }
+  .services_container .services_wrapper {
+    border: 1px solid red;
+    max-width: 1140px;
+    padding: 3rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; }
+    .services_container .services_wrapper .services_titles {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .services_container .services_wrapper .services_titles h3 {
+        font-weight: 700;
+        font-size: 1.5rem;
+        color: #f4cb08; }
+      .services_container .services_wrapper .services_titles h1 {
+        font-weight: bolder;
+        font-size: 2.25rem;
+        color: #111111;
+        margin-top: 1.25rem; }
+      .services_container .services_wrapper .services_titles .line-small {
+        width: 80px;
+        border-width: 3px;
+        border-color: #f4cb08;
+        border-style: solid;
+        border-right-width: 0;
+        border-left-width: 0;
+        border-bottom-width: 0;
+        margin-top: 2rem;
+        margin-bottom: 1.5rem; }
+    .services_container .services_wrapper .services_content {
+      border: 1px solid saddlebrown;
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 2rem;
+      column-gap: 3rem;
+      row-gap: 2rem;
+      display: flex;
+      justify-content: center; }
+      .services_container .services_wrapper .services_content .service_item {
+        width: 33%;
+        min-height: fit-content;
+        max-width: 300px;
+        display: flex; }
+        .services_container .services_wrapper .services_content .service_item .logo_container {
+          flex: 3; }
+          .services_container .services_wrapper .services_content .service_item .logo_container .logo {
+            width: 64px;
+            height: 64px;
+            border-radius: 10px;
+            border: 2px solid #f4cb08;
+            align-self: flex-start;
+            display: flex;
+            justify-content: center;
+            align-items: center; }
+            .services_container .services_wrapper .services_content .service_item .logo_container .logo img {
+              width: 36px;
+              height: 36px; }
+        .services_container .services_wrapper .services_content .service_item .content {
+          flex: 7;
+          color: #111111;
+          word-wrap: break-word;
+          margin-right: 10px; }
+          .services_container .services_wrapper .services_content .service_item .content h3 {
+            font-weight: 700;
+            font-size: 1.25rem;
+            line-height: 1.2;
+            margin-bottom: 1rem; }
+          .services_container .services_wrapper .services_content .service_item .content p {
+            font-family: "Open Sans", sans-serif;
+            line-height: 1.4; }

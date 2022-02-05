@@ -1,0 +1,97 @@
+.services_container {
+  width: 100%;
+
+  .services_wrapper {
+    border: 1px solid red;
+    max-width: $max-width;
+    padding: 3rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+
+    .services_titles {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      h3 {
+        font-weight: 700;
+        font-size: 1.5rem;
+        color: $main-color;
+      }
+
+      h1 {
+        font-weight: bolder;
+        font-size: 2.25rem;
+        color: $text-color-2;
+        margin-top: 1.25rem;
+      }
+
+      .line-small {
+        width: 80px;
+        border-width: 3px;
+        border-color: $main-color;
+        border-style: solid;
+        border-right-width: 0;
+        border-left-width: 0;
+        border-bottom-width: 0;
+        margin-top: 2rem;
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    .services_content {
+        border: 1px solid saddlebrown;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 2rem;
+        column-gap: 3rem;
+        row-gap: 2rem;
+        display: flex;
+        justify-content: center;
+
+      .service_item {
+         
+          width: 33%;
+          min-height: fit-content;
+          max-width: 300px;           
+        display: flex;
+
+        .logo_container {
+            flex: 3;
+            .logo {
+                width: 64px;
+                height: 64px;
+                border-radius: 10px;
+                border: 2px solid $main-color;
+                align-self: flex-start;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              img {
+                width: 36px;
+                height: 36px;
+              }
+            }
+        }
+
+        .content {
+            flex: 7;
+            color: $text-color-2;
+            word-wrap: break-word;
+            
+            margin-right: 10px;
+            h3 {
+                font-weight: 700;
+                font-size: 1.25rem;
+                line-height: 1.2;
+                margin-bottom: 1rem;
+            }
+            p {
+                font-family: $font-2;
+                line-height: 1.4;
+            }
+        }
+      }
+    }
+  }
+}
