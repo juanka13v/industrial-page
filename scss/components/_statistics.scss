@@ -1,0 +1,66 @@
+.statistics_container {
+    width: 100%;
+
+    .statistics_wrapper {
+        background-image: linear-gradient($sombra-3), url('../../assets/statistics.jpeg');
+        background-size: cover;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        max-width: 1236px;
+        margin: 0 auto;
+        min-height: 276px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0 5rem;
+        @media screen and (max-width: $breakpoint-md) {
+            gap: 0;
+            justify-content: initial;
+            flex-wrap: wrap;
+        }
+
+        div {
+            @media screen and (max-width: $breakpoint-md) {
+                flex:0 0 49%;
+            }
+            @media screen and (max-width: $breakpoint-sm) {
+                flex: 1 1 100%;
+            }
+            
+            min-height: 232px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        p {
+            text-align: center;
+            font-weight: 700;
+            word-wrap: break-word;
+            color: $main-color;
+            font-size: 1.85rem;
+            font-family: $font-2;
+        }
+
+        .text {   
+            color: $main-color;
+            font-weight: 700;
+            font-size: 1rem;
+            margin: 1rem 0;
+        }
+
+
+        .line-small {
+            width: 80px;
+            margin: 0 auto;
+            margin-top: .5rem;
+            border-width: 3px;
+            border-color: $main-color;
+            border-style: solid;
+            border-right-width: 0;
+            border-left-width: 0;
+            border-bottom-width: 0;
+        }
+    }
+} 
