@@ -1,0 +1,98 @@
+.portafolio_container {
+    width: 100%;
+    background-color: $bg-color-2;
+    .portafolio_wrapper {
+        max-width: 1236px;
+        margin: 0 auto;
+        padding: 3rem 0 0 0;
+        display: flex;
+        flex-direction: column;
+
+        .portafolio_title {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            h3 {
+                font-size: 1.5rem;
+                font-weight: 700;
+                color: $main-color;
+            }
+
+            h1 {
+                font-weight: bolder;
+                font-size: 2.25rem;
+                color: $text-color;
+                margin-top: 1.25rem;
+                margin-bottom: 1.25rem;
+                text-align: center;
+            }
+
+            .line-small {
+                width: 80px;
+                border-width: 3px;
+                border-color: $main-color;
+                border-style: solid;
+                border-right-width: 0;
+                border-left-width: 0;
+                border-bottom-width: 0;
+                margin-bottom: 1.5rem;
+              }
+        }
+
+        .portafolio_gallery {
+            display: grid;
+            grid-template-columns: repeat(4, minmax(200px, 1fr));
+            @media screen and (max-width: 900px) {
+                grid-template-columns: repeat(2, minmax(200px, 1fr));
+            }
+            @media screen and (max-width:600px) {
+                grid-template-columns: repeat(1, minmax(200px, 1fr));
+            }
+            
+            div {
+                width: 100%;
+                min-height: 278px;
+                @media screen and (max-width: 475px) {
+                    min-width: 235px;
+                }
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            .img_item-1 {
+                background-image: url('../../assets/proyects/built-1.png');
+            }
+
+            .img_item-2 {
+                background-image: url('../../assets/proyects/building-2.png');
+            }
+
+            .img_item-3 {
+                background-image: url('../../assets/proyects/building-3.png');
+            }
+
+            .img_item-4 {
+                background-image: url('../../assets/proyects/building-4.png');
+            }
+
+            .img_item-5 {
+                background-image: url('../../assets/proyects/building-5.png');
+            }
+
+            .img_item-6 {
+                background-image: url('../../assets/proyects/building-6.png');
+            }
+
+            .img_item-7 {
+                background-image: url('../../assets/proyects/building-7.png');
+            }
+
+            .img_item-8 {
+                background-image: url('../../assets/proyects/building-8.png');
+            }
+            
+        }
+    }
+}

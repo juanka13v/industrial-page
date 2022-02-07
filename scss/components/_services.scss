@@ -2,9 +2,14 @@
   width: 100%;
 
   .services_wrapper {
-    border: 1px solid red;
     max-width: $max-width;
     padding: 3rem;
+    @media screen and (max-width: 900px) {
+      padding: 3rem 2rem;
+    }
+    @media screen and (max-width: $breakpoint-md) {
+      padding: 2rem 1rem;
+    }
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -24,6 +29,7 @@
         font-size: 2.25rem;
         color: $text-color-2;
         margin-top: 1.25rem;
+        text-align: center;
       }
 
       .line-small {
@@ -40,24 +46,25 @@
     }
 
     .services_content {
-        border: 1px solid saddlebrown;
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: 2rem;
-        column-gap: 3rem;
-        row-gap: 2rem;
-        display: flex;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(150px, 300px));
         justify-content: center;
-
-      .service_item {
-         
-          width: 33%;
-          min-height: fit-content;
-          max-width: 300px;           
+        gap: 2rem 1rem;
+        @media screen and (max-width: 900px) {
+          grid-template-columns: repeat(2, minmax(150px, 300px));
+        }
+        @media screen and (max-width: 569px) {
+          grid-template-columns: repeat(1, minmax(150px, 300px));
+          gap: 1rem;
+        }
+      .service_item {                  
         display: flex;
 
         .logo_container {
             flex: 3;
+            display: flex;
+            justify-content: center;
+            margin-right: 10px;
             .logo {
                 width: 64px;
                 height: 64px;
