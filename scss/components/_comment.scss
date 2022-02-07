@@ -1,5 +1,6 @@
 .testimonials_container {
   width: 100%;
+  background-color: $bg-color-2;
 
   .testimonials_wrapper {
     border: 1px solid aqua;
@@ -29,6 +30,7 @@
         font-size: 2.25rem;
         line-height: 1.1;
         text-align: center;
+        color: $text-color;
       }
 
       .line-small {
@@ -40,6 +42,68 @@
         border-left-width: 0;
         border-bottom-width: 0;
         margin-bottom: 1.5rem;
+      }
+    }
+
+    .content {
+      display: flex;
+      gap: 1rem;
+      justify-content: space-evenly;
+      @media screen and (max-width: $breakpoint-md) {
+        justify-content: center;
+        flex-wrap: wrap; 
+      }
+
+      .comment_item:nth-child(1) {
+        flex: 1 1 50%;
+      }
+
+      .comment_item:nth-child(2) {
+        flex: 1 1 50%;
+      }
+
+      .comment_item:nth-child(3) {
+        flex: 1 1 100%;
+      }
+
+      .content_item {
+        color: $text-color;
+        width: 258px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .comment {
+          font-family: $font-2;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          border: 2px solid $second-color;
+
+          p {
+            margin: 22px 16px 36px 16px;
+            color: $text-color;
+          }
+
+          .img {
+            margin-bottom: -4rem;
+          }
+        }
+
+        h3 {
+          font-weight: 400;
+          font-size: 1.5rem;
+          text-align: center;
+          margin-top: 4.5rem;
+        }
+
+        p {
+          margin-top: 1.5rem;
+          font-weight: 400;
+          color: $main-color;
+          text-align: center;
+        }
       }
     }
   }

@@ -1,0 +1,70 @@
+.span_container {
+    width: 100%;
+    background-color: $main-color;
+
+    .span_wrapper {
+        border: 1px solid saddlebrown;
+        max-width: $max-width;
+        padding: 3rem;
+        @media screen and (max-width:$breakpoint-sm) {
+            padding: 2rem 1rem;
+        }
+        margin: 0 auto;
+        display: flex;
+        @media screen and (max-width:$breakpoint-md) {
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .title {
+            flex: 7;
+            @media screen and (max-width:$breakpoint-md) {
+                flex: 1;
+            }
+            h1 {
+                font-size: 3rem;
+                color: #ffffff;
+                font-weight: 400;
+                margin-bottom: 1.5rem;
+                @media screen and (max-width:$breakpoint-sm) {
+                    font-size: 2.5rem;
+                }
+            }
+
+            p {
+                color: #ffffff;
+            }
+        }
+
+        .btn_container {
+            flex: 3;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @media screen and (max-width:$breakpoint-md) {
+                flex: 1;
+                justify-content: flex-start;
+            }
+
+            button {
+                font-weight: 700;
+                font-size: 1rem;
+                letter-spacing: 1px;
+                border-radius: 4px;
+                padding: 10px 30px;
+                color: $text-color;
+                border: 2px solid $text-color;
+
+                
+                cursor: pointer;
+            }
+
+            button:hover {
+                background-color: $hover-color;
+                border-color: $hover-color;
+            }
+
+
+        }
+    }
+}

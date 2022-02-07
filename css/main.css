@@ -591,7 +591,8 @@ button {
           text-align: center; }
 
 .testimonials_container {
-  width: 100%; }
+  width: 100%;
+  background-color: #2c2c2c; }
   .testimonials_container .testimonials_wrapper {
     border: 1px solid aqua;
     max-width: 1140px;
@@ -615,7 +616,8 @@ button {
         font-weight: 400;
         font-size: 2.25rem;
         line-height: 1.1;
-        text-align: center; }
+        text-align: center;
+        color: #ffffff; }
       .testimonials_container .testimonials_wrapper .title .line-small {
         width: 80px;
         border-width: 3px;
@@ -625,3 +627,215 @@ button {
         border-left-width: 0;
         border-bottom-width: 0;
         margin-bottom: 1.5rem; }
+    .testimonials_container .testimonials_wrapper .content {
+      display: flex;
+      gap: 1rem;
+      justify-content: space-evenly; }
+      @media screen and (max-width: 769px) {
+        .testimonials_container .testimonials_wrapper .content {
+          justify-content: center;
+          flex-wrap: wrap; } }
+      .testimonials_container .testimonials_wrapper .content .comment_item:nth-child(1) {
+        flex: 1 1 50%; }
+      .testimonials_container .testimonials_wrapper .content .comment_item:nth-child(2) {
+        flex: 1 1 50%; }
+      .testimonials_container .testimonials_wrapper .content .comment_item:nth-child(3) {
+        flex: 1 1 100%; }
+      .testimonials_container .testimonials_wrapper .content .content_item {
+        color: #ffffff;
+        width: 258px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .testimonials_container .testimonials_wrapper .content .content_item .comment {
+          font-family: "Open Sans", sans-serif;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          text-align: center;
+          border: 2px solid #b3b3b3; }
+          .testimonials_container .testimonials_wrapper .content .content_item .comment p {
+            margin: 22px 16px 36px 16px;
+            color: #ffffff; }
+          .testimonials_container .testimonials_wrapper .content .content_item .comment .img {
+            margin-bottom: -4rem; }
+        .testimonials_container .testimonials_wrapper .content .content_item h3 {
+          font-weight: 400;
+          font-size: 1.5rem;
+          text-align: center;
+          margin-top: 4.5rem; }
+        .testimonials_container .testimonials_wrapper .content .content_item p {
+          margin-top: 1.5rem;
+          font-weight: 400;
+          color: #f4cb08;
+          text-align: center; }
+
+.logos_container {
+  width: 100%;
+  background-color: #171717; }
+  .logos_container .logos_wrapper {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: repeat(6, minmax(150px, 1fr));
+    justify-items: center; }
+    @media screen and (max-width: 960px) {
+      .logos_container .logos_wrapper {
+        grid-template-columns: repeat(3, minmax(150px, 1fr)); } }
+    @media screen and (max-width: 769px) {
+      .logos_container .logos_wrapper {
+        padding: 2rem 1rem; } }
+    @media screen and (max-width: 480px) {
+      .logos_container .logos_wrapper {
+        grid-template-columns: repeat(2, minmax(150px, 1fr)); } }
+    .logos_container .logos_wrapper .logo {
+      min-height: 188px; }
+      .logos_container .logos_wrapper .logo img {
+        margin: 28px auto;
+        height: 133px;
+        width: 128px; }
+
+.blog_container {
+  width: 100%;
+  background-color: #ffffff; }
+  .blog_container .blog_wrapper {
+    max-width: 1140px;
+    padding: 3rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; }
+    @media screen and (max-width: 480px) {
+      .blog_container .blog_wrapper {
+        padding: 2rem 1rem; } }
+    .blog_container .blog_wrapper .title {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .blog_container .blog_wrapper .title h3 {
+        color: #f4cb08;
+        font-weight: 400;
+        font-size: 1.875rem; }
+      .blog_container .blog_wrapper .title h1 {
+        font-weight: 900;
+        font-size: 2.25rem;
+        color: #111111;
+        text-align: center;
+        margin: 1.5rem 0; }
+      .blog_container .blog_wrapper .title .line-small {
+        width: 80px;
+        border-width: 3px;
+        border-color: #f4cb08;
+        border-style: solid;
+        border-right-width: 0;
+        border-left-width: 0;
+        border-bottom-width: 0;
+        margin-bottom: 1.5rem; }
+    .blog_container .blog_wrapper .content {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(200px, 1fr));
+      gap: 1rem;
+      justify-content: center;
+      justify-items: center; }
+      @media screen and (max-width: 900px) {
+        .blog_container .blog_wrapper .content {
+          grid-template-columns: repeat(2, minmax(200px, 1fr)); } }
+      @media screen and (max-width: 669px) {
+        .blog_container .blog_wrapper .content {
+          grid-template-columns: repeat(1, minmax(200px, 1fr)); } }
+      .blog_container .blog_wrapper .content .card {
+        border: 1px solid firebrick;
+        display: flex;
+        flex-direction: column;
+        max-width: 350px; }
+        .blog_container .blog_wrapper .content .card .img {
+          background-image: url("../../assets/blog/blog-1.png");
+          background-repeat: no-repeat;
+          background-position: 50% 50%;
+          background-size: cover;
+          height: 288px; }
+          @media screen and (max-width: 769px) {
+            .blog_container .blog_wrapper .content .card .img {
+              height: 248px; } }
+        .blog_container .blog_wrapper .content .card .img_1 {
+          background-image: url("../../assets/blog/blog-1.png"); }
+        .blog_container .blog_wrapper .content .card .img_2 {
+          background-image: url("../../assets/blog/blog-2.png"); }
+        .blog_container .blog_wrapper .content .card .img_3 {
+          background-image: url("../../assets/blog/blog-3.png"); }
+        .blog_container .blog_wrapper .content .card .text {
+          display: flex;
+          flex-direction: column;
+          padding: 1.5rem; }
+          .blog_container .blog_wrapper .content .card .text h1 {
+            font-weight: 700;
+            font-size: 1.5rem; }
+          .blog_container .blog_wrapper .content .card .text h5 {
+            margin: 1rem 0;
+            font-weight: 400;
+            font-size: 1rem;
+            color: #b3b3b3; }
+          .blog_container .blog_wrapper .content .card .text p {
+            font-family: "Open Sans", sans-serif;
+            margin: 0 0 2.5rem 0;
+            line-height: 1.6; }
+          .blog_container .blog_wrapper .content .card .text button {
+            width: fit-content;
+            padding: 0 0 2px;
+            font-size: 14px;
+            font-weight: 700;
+            border-bottom: 2px solid black;
+            color: #000000; }
+
+.span_container {
+  width: 100%;
+  background-color: #f4cb08; }
+  .span_container .span_wrapper {
+    border: 1px solid saddlebrown;
+    max-width: 1140px;
+    padding: 3rem;
+    margin: 0 auto;
+    display: flex; }
+    @media screen and (max-width: 480px) {
+      .span_container .span_wrapper {
+        padding: 2rem 1rem; } }
+    @media screen and (max-width: 769px) {
+      .span_container .span_wrapper {
+        flex-direction: column;
+        gap: 2rem; } }
+    .span_container .span_wrapper .title {
+      flex: 7; }
+      @media screen and (max-width: 769px) {
+        .span_container .span_wrapper .title {
+          flex: 1; } }
+      .span_container .span_wrapper .title h1 {
+        font-size: 3rem;
+        color: #ffffff;
+        font-weight: 400;
+        margin-bottom: 1.5rem; }
+        @media screen and (max-width: 480px) {
+          .span_container .span_wrapper .title h1 {
+            font-size: 2.5rem; } }
+      .span_container .span_wrapper .title p {
+        color: #ffffff; }
+    .span_container .span_wrapper .btn_container {
+      flex: 3;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      @media screen and (max-width: 769px) {
+        .span_container .span_wrapper .btn_container {
+          flex: 1;
+          justify-content: flex-start; } }
+      .span_container .span_wrapper .btn_container button {
+        font-weight: 700;
+        font-size: 1rem;
+        letter-spacing: 1px;
+        border-radius: 4px;
+        padding: 10px 30px;
+        color: #ffffff;
+        border: 2px solid #ffffff;
+        cursor: pointer; }
+      .span_container .span_wrapper .btn_container button:hover {
+        background-color: #967e07;
+        border-color: #967e07; }

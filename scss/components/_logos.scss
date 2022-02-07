@@ -1,0 +1,33 @@
+.logos_container {
+    width: 100%;
+    background-color: $bg-color-3;
+
+    .logos_wrapper {
+        max-width: $max-width;
+        margin: 0 auto;
+        padding: 3rem;
+        display: grid;
+        grid-template-columns: repeat(6, minmax(150px, 1fr));
+        justify-items: center;
+        @media screen and (max-width: 960px) {
+            grid-template-columns: repeat(3, minmax(150px, 1fr));
+        }
+        @media screen and (max-width: $breakpoint-md) {
+            padding:  2rem 1rem;
+        }
+
+        @media screen and (max-width: $breakpoint-sm) {
+            grid-template-columns: repeat(2, minmax(150px, 1fr));
+        }
+
+        .logo {
+            min-height: 188px;
+            
+            img {
+                margin: 28px auto;
+                height: 133px;
+                width: 128px;
+            }
+        }
+    }
+}
