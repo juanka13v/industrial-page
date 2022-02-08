@@ -3,7 +3,6 @@
     background-color: $main-color;
 
     .span_wrapper {
-        border: 1px solid saddlebrown;
         max-width: $max-width;
         padding: 3rem;
         @media screen and (max-width:$breakpoint-sm) {

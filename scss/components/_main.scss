@@ -7,7 +7,6 @@
   background-repeat: no-repeat;
 
   .main_wrapper {
-    border: 1px solid seagreen;
     max-width: $max-width;
     margin: 0 auto;
     padding: 6rem 3rem 0 3rem;
@@ -127,7 +126,6 @@
       .img_content {
           display: flex;
           justify-content: center;
-        border: 1px solid springgreen;
         max-height: 600px;
         max-width: 350px;
       }
